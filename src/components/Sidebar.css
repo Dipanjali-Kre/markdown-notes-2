@@ -1,0 +1,109 @@
+.sidebar {
+  width: 300px;
+  background-color: #21252b;
+  border-right: 1px solid #3c414a;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #3c414a;
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  color: #61dafb;
+}
+
+.new-note-button {
+  background-color: #61dafb;
+  color: #21252b;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.new-note-button:hover {
+  background-color: #21a1f1;
+}
+
+.note-list {
+  flex-grow: 1;
+}
+
+.no-notes-message {
+  color: #888;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.note-list-item {
+  background-color: #282c34;
+  border: 1px solid #3c414a;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-list-item:hover {
+  background-color: #3c414a;
+}
+
+.note-list-item.active {
+  background-color: #3c414a;
+  border-color: #61dafb;
+}
+
+.note-title-preview {
+  flex-grow: 1;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.note-title-preview h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.1em;
+  color: #abb2bf;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.note-title-preview small {
+  color: #888;
+  font-size: 0.8em;
+}
+
+.delete-note-button {
+  background: none;
+  border: none;
+  color: #e06c75;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 5px;
+  transition: color 0.2s ease;
+}
+
+.delete-note-button:hover {
+  color: #be5046;
+}
